@@ -243,7 +243,7 @@ public class AuthServiceImpl implements AuthService {
                                 dto.getEmail())
                         .orElseThrow(() ->
                                 new BadCredentialsException(
-                                        "Invalid email or password."));
+                                        "Please check your registred email and password."));
 
         if (!user.isEnabled()
                 || !user.isEmailVerified()
